@@ -13,6 +13,9 @@
 		DA5EB3521C32DB770060236F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA5EB3501C32DB770060236F /* Main.storyboard */; };
 		DA5EB3541C32DB770060236F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA5EB3531C32DB770060236F /* Assets.xcassets */; };
 		DA5EB3571C32DB770060236F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA5EB3551C32DB770060236F /* LaunchScreen.storyboard */; };
+		DA5EB3601C32DB9E0060236F /* HPLPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5EB35F1C32DB9E0060236F /* HPLPerson.m */; };
+		DA5EB3631C32DC0C0060236F /* HPLProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5EB3621C32DC0C0060236F /* HPLProfileView.m */; };
+		DA5EB3651C32DC130060236F /* HPLProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA5EB3641C32DC130060236F /* HPLProfileView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		DA5EB3531C32DB770060236F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA5EB3561C32DB770060236F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA5EB3581C32DB770060236F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA5EB35E1C32DB9E0060236F /* HPLPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPLPerson.h; sourceTree = "<group>"; };
+		DA5EB35F1C32DB9E0060236F /* HPLPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPLPerson.m; sourceTree = "<group>"; };
+		DA5EB3611C32DC0C0060236F /* HPLProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPLProfileView.h; sourceTree = "<group>"; };
+		DA5EB3621C32DC0C0060236F /* HPLProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPLProfileView.m; sourceTree = "<group>"; };
+		DA5EB3641C32DC130060236F /* HPLProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPLProfileView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,11 @@
 				DA5EB34B1C32DB770060236F /* AppDelegate.m */,
 				DA5EB34D1C32DB770060236F /* ViewController.h */,
 				DA5EB34E1C32DB770060236F /* ViewController.m */,
+				DA5EB35E1C32DB9E0060236F /* HPLPerson.h */,
+				DA5EB35F1C32DB9E0060236F /* HPLPerson.m */,
+				DA5EB3611C32DC0C0060236F /* HPLProfileView.h */,
+				DA5EB3621C32DC0C0060236F /* HPLProfileView.m */,
+				DA5EB3641C32DC130060236F /* HPLProfileView.xib */,
 				DA5EB3501C32DB770060236F /* Main.storyboard */,
 				DA5EB3531C32DB770060236F /* Assets.xcassets */,
 				DA5EB3551C32DB770060236F /* LaunchScreen.storyboard */,
@@ -105,6 +118,7 @@
 		DA5EB33C1C32DB770060236F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HPL;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Mathemusician.net;
 				TargetAttributes = {
@@ -139,6 +153,7 @@
 				DA5EB3571C32DB770060236F /* LaunchScreen.storyboard in Resources */,
 				DA5EB3541C32DB770060236F /* Assets.xcassets in Resources */,
 				DA5EB3521C32DB770060236F /* Main.storyboard in Resources */,
+				DA5EB3651C32DC130060236F /* HPLProfileView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA5EB34F1C32DB770060236F /* ViewController.m in Sources */,
+				DA5EB3601C32DB9E0060236F /* HPLPerson.m in Sources */,
+				DA5EB3631C32DC0C0060236F /* HPLProfileView.m in Sources */,
 				DA5EB34C1C32DB770060236F /* AppDelegate.m in Sources */,
 				DA5EB3491C32DB770060236F /* main.m in Sources */,
 			);

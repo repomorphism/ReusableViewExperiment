@@ -7,21 +7,29 @@
 //
 
 #import "ViewController.h"
+#import "HPLProfileView.h"
+#import "HPLPerson.h"
+
 
 @interface ViewController ()
 
+@property (strong, nonatomic) IBOutletCollection(HPLProfileView) NSArray *profileViews;
+
 @end
+
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSArray *people = @[ [[HPLPerson alloc] initWithFirstName:@"Taylor" lastName:@"Swift"],
+                         [[HPLPerson alloc] initWithFirstName:@"Barack" lastName:@"Obama"],
+                         [[HPLPerson alloc] initWithFirstName:@"Tim"    lastName:@"Cook"] ];
+
+    [self.profileViews enumerateObjectsUsingBlock:^(HPLProfileView *profileView, NSUInteger idx, BOOL * _Nonnull stop) {
+        profileView.person = people[idx];
+    }];
 }
 
 @end

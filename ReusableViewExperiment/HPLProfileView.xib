@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HPLProfileView">
+            <connections>
+                <outlet property="firstNameLabel" destination="CMe-bn-53g" id="k13-WS-T8d"/>
+                <outlet property="lastNameLabel" destination="ylm-iM-wL8" id="eaw-xB-g0i"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLV-7N-vqk" userLabel="Centering View">
+                    <rect key="frame" x="34" y="27" width="33" height="46"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paul" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMe-bn-53g">
+                            <rect key="frame" x="0.0" y="0.0" width="33" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylm-iM-wL8">
+                            <rect key="frame" x="0.0" y="25" width="33" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ylm-iM-wL8" firstAttribute="leading" secondItem="WLV-7N-vqk" secondAttribute="leading" id="PNf-Uj-8z8"/>
+                        <constraint firstAttribute="trailing" secondItem="CMe-bn-53g" secondAttribute="trailing" id="dbU-ic-CR7"/>
+                        <constraint firstItem="ylm-iM-wL8" firstAttribute="top" secondItem="CMe-bn-53g" secondAttribute="bottom" constant="4" id="flI-ro-un6"/>
+                        <constraint firstItem="CMe-bn-53g" firstAttribute="leading" secondItem="WLV-7N-vqk" secondAttribute="leading" id="h1k-rb-2Rw"/>
+                        <constraint firstAttribute="bottom" secondItem="ylm-iM-wL8" secondAttribute="bottom" id="pmX-34-yZN"/>
+                        <constraint firstAttribute="trailing" secondItem="ylm-iM-wL8" secondAttribute="trailing" id="u4l-Rh-1GH"/>
+                        <constraint firstItem="CMe-bn-53g" firstAttribute="top" secondItem="WLV-7N-vqk" secondAttribute="top" id="vV6-zK-LeR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="WLV-7N-vqk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="evp-we-9WP"/>
+                <constraint firstItem="WLV-7N-vqk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gJo-by-LMK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
