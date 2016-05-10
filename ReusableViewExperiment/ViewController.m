@@ -30,6 +30,11 @@
     [self.profileViews enumerateObjectsUsingBlock:^(HPLProfileView *profileView, NSUInteger idx, BOOL * _Nonnull stop) {
         profileView.person = people[idx];
     }];
+
+    // dynamic
+    HPLProfileView *dynamicView = [[HPLProfileView alloc] initWithFrame:CGRectMake(0, 20, 70, 50)];
+    dynamicView.person = [[HPLPerson alloc] initWithFirstName:@"Chris" lastName:@"Lattner"];
+    [self.view addSubview:dynamicView];
 }
 
 @end
