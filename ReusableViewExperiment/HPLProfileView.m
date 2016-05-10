@@ -30,11 +30,30 @@
 }
 
 #pragma mark - Custom loading
-
+/*
 - (void)awakeFromNib {
     [super awakeFromNib];
 
     [self addInsideView];
+}
+*/
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self addInsideView];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self addInsideView];
+    }
+    return self;
 }
 
 - (void)addInsideView {
